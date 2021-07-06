@@ -41,5 +41,15 @@ public class FillFormPositiveTest {
         $("#submit").click();
         //Assert
         $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
+        $x("//table//tr[1]/td[2]").shouldHave(text("Nikolay Garbuziuk"));
+        $x("//table//tr[2]/td[2]").shouldHave(text("testemail@gmail.com"));
+        $x("//table//tr[3]/td[2]").shouldHave(text("Male"));
+        $x("//table//tr[4]/td[2]").shouldHave(text("1234567890"));
+        $x("//table//tr[5]/td[2]").shouldHave(text("22 February,1991"));
+        $x("//table//tr[6]/td[2]").shouldHave(text("Maths"));
+        $x("//table//tr[7]/td[2]").shouldHave(text("Sports"));
+        $x("//table//tr[8]/td[2]").shouldHave(text("fileForUpload.jpg"));
+        $x("//table//tr[9]/td[2]").shouldHave(text("Test address"));
+        $x("//table//tr[10]/td[2]").shouldHave(text("Uttar Pradesh Merrut"));
     }
 }
